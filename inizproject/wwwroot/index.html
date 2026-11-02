@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Search Parser</title>
+</head>
+<body>
+    <h2>Test</h2>
+    <input type="text" id="keywordInput" placeholder="Enter key word" style="padding: 8px; width: 250px;" />
+    <button onclick="performSearch()" style="padding: 8px 15px;">Search and download</button>
+
+    <script>
+        function performSearch() {
+            const keyword = document.getElementById('keywordInput').value;
+            if (!keyword) {
+                alert('Enter key word!');
+                return;
+            }
+            window.location.href = `/api/search?q=${encodeURIComponent(keyword)}`;
+        }
+    </script>
+</body>
+</html>

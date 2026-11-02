@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../GoogleSearchApp.Tests/inizproject.Tests.csproj" />
+  <Project Path="inizproject.csproj" />
+</Solution>
